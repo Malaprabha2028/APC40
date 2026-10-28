@@ -1,3 +1,5 @@
 n = int(input("Enter n: "))
-for i in range(2, n + 1, 2):
+i = 2
+while i <= n:
     print(i, end=" ")
+    i = i + 2

@@ -1,4 +1,7 @@
 n = int(input("Enter n: "))
-
-for i in range(n + 1):
-    print(2 ** i, end=" ")
+i = 1
+sum = 0
+while i <= n:
+    sum = sum + i
+    i = i + 1
+print("Sum =", sum)
