@@ -1,2 +1,4 @@
-a = [1, 2, 3, 4]
-print(list(map(lambda x: x * x, a)))
+f = open("student.txt", "r")
+lines = f.readlines()
+print("Total number of lines:", len(lines))
+f.close()

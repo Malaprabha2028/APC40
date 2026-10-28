@@ -1,2 +1,5 @@
-even = lambda x: x % 2 == 0
-print(even(4))
+f = open("student.txt", "a")
+f.write("College: D.Y. Patil College of Engineering and Technology\n")
+f.write("City: Kolhapur\n")
+f.close()
+print("Information appended successfully.")

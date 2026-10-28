@@ -1,2 +1,4 @@
-cube = lambda x: x ** 3
-print(cube(3))
+f = open("student.txt", "r")
+data = f.read()
+print(data)
+f.close()

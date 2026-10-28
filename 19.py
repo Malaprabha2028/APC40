@@ -1,6 +1,19 @@
-products = [("Pen", 20, 10), ("Bag", 1500, 2)]
+students = [
+    ("Amit", 70, 100),
+    ("Priya", 90, 100),
+    ("Rahul", 60, 80)
+]
 
-total = list(map(lambda x: (x[0], x[1] * x[2]), products))
-print(total)
-print(list(filter(lambda x: x[1] > 1000, total)))
-print(sorted(total, key=lambda x: x[1]))
+with open("attendance.txt", "w") as f:
+    for name, present, total in students:
+        f.write(f"{name},{present},{total}\n")
+
+with open("attendance.txt", "r") as f:
+    for line in f:
+        name, present, total = line.strip().split(",")
+        percentage = int(present) / int(total) * 100
+
+        print(name, "Attendance:", percentage, "%")
+
+        if percentage < 75:
+            print(name, "has attendance below 75%.")

@@ -1,2 +1,9 @@
-employees = [("Amit", 30000), ("Riya", 50000), ("Raj", 40000)]
-print(sorted(employees, key=lambda x: x[1]))
+f = open("student.txt", "r")
+text = f.read()
+f.close()
+
+f = open("uppercase.txt", "w")
+f.write(text.upper())
+f.close()
+
+print("Uppercase file created.")

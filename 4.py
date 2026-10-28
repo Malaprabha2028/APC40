@@ -1,2 +1,4 @@
-big = lambda a, b: a if a > b else b
-print(big(10, 20))
+f = open("student.txt", "r")
+for line in f:
+    print(line.strip())
+f.close()

@@ -1,3 +1,5 @@
-a = [1, 2, 3]
-b = [4, 5, 6]
-print(list(map(lambda x, y: x + y, a, b)))
+f = open("student.txt", "r")
+lines = f.readlines()
+for line in reversed(lines):
+    print(line.strip())
+f.close()

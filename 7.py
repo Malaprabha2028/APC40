@@ -1,2 +1,5 @@
-a = [1, 2, 3, 4]
-print(list(map(lambda x: x ** 3, a)))
+f = open("student.txt", "r")
+data = f.read()
+words = data.split()
+print("Total number of words:", len(words))
+f.close()
