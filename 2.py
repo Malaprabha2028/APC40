@@ -1,5 +1,6 @@
-n = int(input("Enter n: "))
-i = 2
-while i <= n:
-    print(i, end=" ")
-    i = i + 2
+def even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(even_odd(7))

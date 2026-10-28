@@ -1,2 +1,3 @@
-for i in range(3):
-    print("A B C")
+def power(base, exponent):
+    return base ** exponent
+print(power(2, 3))

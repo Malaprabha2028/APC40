@@ -1,5 +1,6 @@
-n = int(input("Enter n: "))
-i = 1
-while i <= n:
-   print(i, end=" ")
-   i = i + 2
+def greater(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+print(greater(10, 20))

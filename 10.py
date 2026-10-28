@@ -1,5 +1,7 @@
-n = int(input("Enter n: "))
-for i in range(n, 0, -1):
-   for j in range(i):
-      print(chr(65 + j), end=" ")
-   print()
+def count_vowels(text):
+    count = 0
+    for ch in text:
+        if ch.lower() in "aeiou":
+            count = count + 1
+    return count
+print(count_vowels("Hello World"))

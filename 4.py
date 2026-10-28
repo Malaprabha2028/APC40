@@ -1,7 +1,3 @@
-n = int(input("Enter n: "))
-i = 1
-sum = 0
-while i <= n:
-    sum = sum + i
-    i = i + 1
-print("Sum =", sum)
+def simple_interest(p, r, t):
+    return (p * r * t) / 100
+print(simple_interest(1000, 5, 2))
