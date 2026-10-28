@@ -1,5 +1,8 @@
+import re
+
 email = input("Enter email: ")
-if "@" in email and "." in email and email.index("@") < email.rindex("."):
-    print("Valid Email")
+
+if re.search("@", email):
+    print("Valid email")
 else:
-    print("Invalid Email")
+    print("Invalid email")
