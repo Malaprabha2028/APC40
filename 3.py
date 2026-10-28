@@ -1,6 +1,2 @@
-def greater(a, b):
-    if a > b:
-        return a
-    else:
-        return b
-print(greater(10, 20))
+even = lambda x: x % 2 == 0
+print(even(4))

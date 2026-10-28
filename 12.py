@@ -1,5 +1,2 @@
-def palindrome(x):
-    x = str(x)
-    return x == x[::-1]
-print(palindrome("madam"))
-print(palindrome(121))
+a = [20, 60, 40, 80, 30]
+print(list(filter(lambda x: x > 50, a)))

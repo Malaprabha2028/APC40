@@ -1,6 +1,2 @@
-def even_odd(n):
-    if n % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
-print(even_odd(7))
+cube = lambda x: x ** 3
+print(cube(3))

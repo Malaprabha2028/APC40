@@ -1,7 +1,2 @@
-def largest(numbers):
-   large = numbers[0]
-   for n in numbers:
-       if n > large:
-           large = n
-   return large
-print(largest([10, 25, 5, 40, 15]))
+a = [1, 2, 3, 4, 5, 6]
+print(list(filter(lambda x: x % 2 == 0, a)))
